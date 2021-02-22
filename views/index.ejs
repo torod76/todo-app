@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <h1 class="display-6 text-center text-primary">Todo App</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="well">
+                    <form id="addForm" action="#">
+                        <div class="form-group">
+                            <label for="todo">Add Task:</label>
+                            <textarea class="form-control" name="task" id="task" cols="1" rows="3"
+                                placeholder="Add new task..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Add</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="display-5 text-center">All Tasks</h2>
+                        <ul id="todoList" class="list-group list-group-flush">
+                        </ul>
+                        <hr />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="display-6 text-center">Completed Tasks</h2>
+                        <ul id="completedList" class="list-group list-group-flush ">
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="/js/app.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
