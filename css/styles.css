@@ -1,0 +1,211 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+    line-height: 1.6;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #2a9d8f;
+}
+
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.wrapper {
+    padding-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.main-container {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    border-radius: 0.4em;
+    margin-bottom: 3em;
+}
+
+.main-container h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: #264653 ;
+}
+
+.input-container, .task-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1em;
+}
+
+.input-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.input-container #todo {
+    width: 90%;
+    padding: 0.5em;
+    resize: none;
+}
+
+.input-container #todo:focus {
+    outline: none;
+    border: 1px solid #264653;
+}
+
+.task-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.input-container .button {
+    width: 90%;
+    margin-top: 1em;
+    background-color: #2a9d8f;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    height: 2em;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.input-container .button:focus {
+    outline: none;
+}
+
+.input-container .button:active {
+    outline: none;
+    background-color: #2a9d90b0;
+}
+
+.task-container h2 {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.line-break {
+    border: none;
+    border-top: 0.5px solid lightgrey;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.task-list {
+    display: inline-block;
+    list-style-type: none;
+    width: 100%;
+}
+
+.task-list-item {
+    margin-bottom: 1em;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 100%;
+}
+
+.task-span {
+    display: inline-block;
+    max-width: 70%;
+    padding-left: 1em;
+}
+
+
+.btn-done {
+    float: right;
+    cursor: pointer;
+    padding-right: 0.4em;
+    outline: none;
+}
+
+.btn-remove {
+    float: right;
+    cursor: pointer;
+    padding-right: 1em;
+    outline: none;
+}
+
+img, img:focus{
+    outline: 0 !important;
+    border:0 none !important;
+}
+
+@media screen and (min-width: 600px) {
+    .main-container {
+        max-width: 600px;
+    }
+    .line-break {
+        margin-left: 1.8em;
+        margin-right: 1.8em;
+    }
+    .task-list-item {
+        padding-left: 0.8em;
+    }
+    .btn-remove {
+        padding-right: 1.8em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .main-container {
+        max-width: 800px;
+    }
+    .line-break {
+        margin-left: 2.4em;
+        margin-right: 2.4em;
+    }
+    .task-list-item {
+        padding-left: 1.5em;
+    }
+    .btn-remove {
+        padding-right: 2.4em;
+    }
+}
