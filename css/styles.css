@@ -103,6 +103,10 @@ img {
 }
 
 .input-container .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 1;
     width: 90%;
     margin-top: 1em;
     background-color: #2a9d8f;
