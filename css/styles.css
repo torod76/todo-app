@@ -5,15 +5,14 @@
 * Browsers: last 4 version
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
 	padding: 0;
 	margin: 0;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
     line-height: 1.6;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
